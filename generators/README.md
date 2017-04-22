@@ -1,10 +1,10 @@
 # Generator
 Generator is special function which give result when call method **next**
-Generator can stops  and return result, but after result again start.
+Generator can stops  and return result, but after result again continue.
 
-Generator use keyword **yield** for intermediate result. For define generator, use special construction 'function *'
+Generator use keyword **yield** for intermediate result. For define generator, use special construction **"function\*"**
 
-Example:
+## Example:
 ```js
 function* generateSequence() {
   yield 1;

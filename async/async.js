@@ -1,9 +1,11 @@
 function resolveAfter2Seconds(x) {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve(x);
-    }, 2000);
-  });
+  return new Promise(
+    function(resolve) {
+      setTimeout(function() {
+        resolve(x);
+      }, 2000);
+    }
+  );
 }
 
 async function add1(x) {
@@ -12,8 +14,8 @@ async function add1(x) {
   return x + await a + await b;
 }
 
-add1(10).then(v => {
-  console.log(v);  // prints 60 after 2 seconds.
+add1(10).then(function(v) {
+  console.log(v); // prints 60 after 2 seconds.
 });
 
 async function add2(x) {
@@ -22,6 +24,6 @@ async function add2(x) {
   return x + a + b;
 }
 
-add2(10).then(v => {
-  console.log(v);  // prints 60 after 4 seconds.
+add2(10).then(function(v) {
+  console.log(v); // prints 60 after 4 seconds.
 });
