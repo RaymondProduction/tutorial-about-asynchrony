@@ -1,5 +1,5 @@
 # Generator
-Generator is special function which give result when call method **next**
+Generator is special function which give result when call method **next** of object which this function return.
 Generator can stops  and return result, but after result again continue.
 
 Generator use keyword **yield** for intermediate result. For define generator, use special construction **"function\*"**
